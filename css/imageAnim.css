@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	margin: 0px;
+	border: 0px;
+	background-image:url(../images/puzzle2.jpg);
+	background-repeat:repeat;
+	color:#FFF;
+	font-size:14px;
+}
+
+#wrapper {
+	/*background-image:url(../images/backGround0.jpg);*/
+	position:relative;
+	top:40px;
+	width:600px;
+	height: 400px;
+	margin:0px auto;
+	border: medium solid #333;
+	background-color:#000;
+	overflow: hidden;
+}
+
+header {
+	position: relative;
+	top: 20px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+footer {
+	position: relative;
+	top: 65px;
+	width:600px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#playButton2 { 
+	/*cursor:pointer;*/
+	padding-bottom:15px;
+}
+
+#topLeft { position:relative; }
+
+#topRight { position:relative; left:200px; }
+
+#bottomLeft { position:relative; top:120px; }
+
+#bottomRight { position:relative; top:120px; left:200px; }
+
+#buttonHolder {
+	margin: 0px auto;
+	text-align:center;
+}
+
+#buttonHolder img {
+	margin-left: 5px;
+	margin-right: 5px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-o-border-radius: 20px;
+	border-radius: 20px;
+	border: thin solid #333;	
+	cursor: pointer;	
+}
+
+#buttonHolder img:hover {
+	opacity:.5;
+}
+
+#tempImages img {
+	position: relative;
+}
+
+#bgImage2 {
+	position:absolute;
+	left:0px;
+	top: 0px;
+	z-index:0;
+}
+
+#bgImage { 
+	position:relative;
+	left:0px;
+	top: 0px;
+	z-index:1; 
+}
+
+.initialScale { 
+	-webkit-transform:scale(.25, .25);
+	-moz-transform:scale(.25, .25);
+	transform:scale(.25, .25);
+}
+
+.makeMeAbsolute {
+	position:absolute;
+	z-index:1;
+}
+
+.blur { 
+	-webkit-filter: blur(4px); 
+	-moz-filter: blur(4px); 
+	-o-filter: blur(4px); 
+	-ms-filter: blur(4px); 
+	filter: blur(4px);
+	clip:rect(4px, 198px, 132px, 4px);
+}
