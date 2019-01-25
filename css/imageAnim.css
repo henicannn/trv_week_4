@@ -5,20 +5,35 @@ body {
 	border: 0px;
 	background-image:url(../images/puzzle2.jpg);
 	background-repeat:repeat;
+	background-color: #333;
 	color:#FFF;
-	font-size:14px;
+	font-family: 'Luckiest Guy', sans-serif;
+	font-size:16px;
 }
 
-#wrapper {
-	/*background-image:url(../images/backGround0.jpg);*/
-	position:relative;
-	top:40px;
-	width:600px;
-	height: 400px;
-	margin:0px auto;
+#game-boards {
+	width: 100%;
+	text-align: center;
+}
+
+.puzzle-pieces, .puzzle-board {
+	margin-top: 40px;
+	display: inline-block;
 	border: medium solid #333;
 	background-color:#000;
+	color:inherit;
 	overflow: hidden;
+}
+
+.puzzle-pieces {
+	min-width: 300px;
+	height: 400px;
+	margin-right: 20px;
+}
+
+.puzzle-board {
+	width:600px;
+	height: 400px;
 }
 
 header {
@@ -29,6 +44,14 @@ header {
 	text-align: center;
 }
 
+header h1 {
+	font-size: 3.25em;
+  letter-spacing: 3px;
+	margin: 10px 0
+}
+
+header p, footer p { font-size: 1.7em; letter-spacing: 2px; margin: 10px 0 }
+
 footer {
 	position: relative;
 	top: 65px;
@@ -37,7 +60,7 @@ footer {
 	text-align: center;
 }
 
-#playButton2 { 
+#playButton2 {
 	/*cursor:pointer;*/
 	padding-bottom:15px;
 }
@@ -58,12 +81,9 @@ footer {
 #buttonHolder img {
 	margin-left: 5px;
 	margin-right: 5px;
-	-moz-border-radius: 20px;
-	-webkit-border-radius: 20px;
-	-o-border-radius: 20px;
 	border-radius: 20px;
-	border: thin solid #333;	
-	cursor: pointer;	
+	border: thin solid #333;
+	cursor: pointer;
 }
 
 #buttonHolder img:hover {
@@ -81,16 +101,14 @@ footer {
 	z-index:0;
 }
 
-#bgImage { 
+#bgImage {
 	position:relative;
 	left:0px;
 	top: 0px;
-	z-index:1; 
+	z-index:1;
 }
 
-.initialScale { 
-	-webkit-transform:scale(.25, .25);
-	-moz-transform:scale(.25, .25);
+.initialScale {
 	transform:scale(.25, .25);
 }
 
@@ -99,11 +117,7 @@ footer {
 	z-index:1;
 }
 
-.blur { 
-	-webkit-filter: blur(4px); 
-	-moz-filter: blur(4px); 
-	-o-filter: blur(4px); 
-	-ms-filter: blur(4px); 
+.blur {
 	filter: blur(4px);
 	clip:rect(4px, 198px, 132px, 4px);
 }

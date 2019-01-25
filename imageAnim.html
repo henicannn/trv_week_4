@@ -2,32 +2,34 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Image Animation with Greensock</title>
-<link href="css/imageAnim.css" rel="stylesheet" type="text/css">
-<script src="script/TweenMax.js"></script>
+	<title>Drag and Drop Puzzle Game</title>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Titan+One" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="css/imageAnim.css" rel="stylesheet" type="text/css">
 </head>
-
 <body>
-<header id="headLine">
-	<img src="images/headline.png"/>
-</header>
+	<header id="headLine">
+		<h1>fun with javascript!</h1>
+		<p>Drop puzzle pieces below!</p>
+	</header>
+	<section id="game-boards">
+		<div class="puzzle-pieces"></div>
+		<div class="puzzle-board"></div>
+	</section>
+	<!-- <section id="wrapper" class="commonSettings"></section> -->
 
-<section id="wrapper" class="commonSettings">
-	<img id="bgImage" src="images/backGround0.jpg"/>
-    <img id="bgImage2" src="images/backGround1.jpg"/>
-</section>
+	<footer>
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<img id="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img id="1" src="images/buttonOne.jpg" alt="thumbnail">
+	    <img id="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img id="3" src="images/buttonThree.jpg" alt="thumbnail">
+		</nav>
+	</footer>
 
-<footer>
-	<img id="playButton2" src="images/playImg2.png"/> 
-	<nav id="buttonHolder">
-		<img id="0" src="images/buttonZero.jpg"/> <img id="1" src="images/buttonOne.jpg"/> 
-        <img id="2" src="images/buttonTwo.jpg"/> <img id="3" src="images/buttonThree.jpg"/>
-	</nav>
-</footer>
+	<div id="tempImages"></div>
 
-<div id="tempImages"></div>
-
-<script src="script/imageAnim.js"></script>
-
+	<script src="script/imageAnim.js"></script>
 </body>
 </html>
