@@ -14,21 +14,24 @@
 	</header>
 	<section id="game-boards">
 		<div class="puzzle-pieces"></div>
-		<div class="puzzle-board"></div>
+		<div class="puzzle-board">
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone br"></div>
+		</div>
 	</section>
 	<!-- <section id="wrapper" class="commonSettings"></section> -->
 
 	<footer>
 		<p>click thumb to change pieces!</p>
 		<nav id="buttonHolder">
-			<img id="0" src="images/buttonZero.jpg" alt="thumbnail">
-			<img id="1" src="images/buttonOne.jpg" alt="thumbnail">
-	    <img id="2" src="images/buttonTwo.jpg" alt="thumbnail">
-			<img id="3" src="images/buttonThree.jpg" alt="thumbnail">
+			<img id="0" data-puzzleindex="0" src="images/buttonZero.jpg" alt="thumbnail">
+			<img id="1" data-puzzleindex="1" src="images/buttonOne.jpg" alt="thumbnail">
+	    <img id="2" data-puzzleindex="2" src="images/buttonTwo.jpg" alt="thumbnail">
+			<img id="3" data-puzzleindex="3" src="images/buttonThree.jpg" alt="thumbnail">
 		</nav>
 	</footer>
-
-	<div id="tempImages"></div>
 
 	<script src="script/imageAnim.js"></script>
 </body>

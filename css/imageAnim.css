@@ -18,6 +18,7 @@ body {
 
 .puzzle-pieces, .puzzle-board {
 	margin-top: 40px;
+	height: 400px;
 	display: inline-block;
 	border: medium solid #333;
 	background-color:#000;
@@ -26,14 +27,47 @@ body {
 }
 
 .puzzle-pieces {
-	min-width: 300px;
-	height: 400px;
+	width: 300px;
 	margin-right: 20px;
+
 }
 
-.puzzle-board {
-	width:600px;
-	height: 400px;
+.puzzle-board { width:600px; }
+
+.puzzle-image {
+	width: 40%;
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+.puzzle-image:nth-child(even) {
+	float: right;
+	clear: both;
+}
+.puzzle-image:nth-child(odd) {
+	float: left;
+	clear: both;
+}
+
+.drop-zone {
+	width: 49.5%;
+  height: 49.5%;
+  border: thin dashed white;
+  float: left;
+	position: relative;
+}
+
+.tl, .bl { text-align: right; }
+.tr img { bottom: 0; }
+.tl img { bottom: 0; right: 0; }
+.bl img { right: 0; }
+
+.drop-zone img {
+	width: auto !important;
+	padding: 0 !important;
+	cursor: default;
+	position: absolute;
 }
 
 header {
@@ -60,19 +94,6 @@ footer {
 	text-align: center;
 }
 
-#playButton2 {
-	/*cursor:pointer;*/
-	padding-bottom:15px;
-}
-
-#topLeft { position:relative; }
-
-#topRight { position:relative; left:200px; }
-
-#bottomLeft { position:relative; top:120px; }
-
-#bottomRight { position:relative; top:120px; left:200px; }
-
 #buttonHolder {
 	margin: 0px auto;
 	text-align:center;
@@ -88,36 +109,4 @@ footer {
 
 #buttonHolder img:hover {
 	opacity:.5;
-}
-
-#tempImages img {
-	position: relative;
-}
-
-#bgImage2 {
-	position:absolute;
-	left:0px;
-	top: 0px;
-	z-index:0;
-}
-
-#bgImage {
-	position:relative;
-	left:0px;
-	top: 0px;
-	z-index:1;
-}
-
-.initialScale {
-	transform:scale(.25, .25);
-}
-
-.makeMeAbsolute {
-	position:absolute;
-	z-index:1;
-}
-
-.blur {
-	filter: blur(4px);
-	clip:rect(4px, 198px, 132px, 4px);
 }
